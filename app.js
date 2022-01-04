@@ -2,6 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 const { Router } = require("express");
 var  mongoose = require("mongoose");
+require('dotenv').config();
 
 var app = express();
 
@@ -34,27 +35,13 @@ app.get("/work", function(req, res){
     res.render("work.ejs")
 })
 
-
-// post Router
-// =========================================================
-
-// app.post("/work", function(req, res){
-//     Wrk.create(Wrkw, function(err, Art){
-//         if(err){
-//             console.log(err)
-//             res.redirect("back")
-//         } else {
-//             console.log(Art)
-//             res.redirect("/gallery")
-//         }
-// })
-
-//===========================================================
-
 app.get("*", function(req, res){
     res.render("404.ejs")
 })
 
-app.listen("3000", function(){
-    console.log("server ready")
-})
+
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
