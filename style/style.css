@@ -806,7 +806,7 @@ footer #b_g #abt #main p{
 
 .menu_ct{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     background-image: linear-gradient(90deg,  rgba(56, 56, 56, 0),rgb(20, 20, 20),rgb(20, 20, 20),rgb(20, 20, 20));
     right: -1000px;
@@ -1274,12 +1274,22 @@ footer #b_g #abt #main p{
 }
 
 @media (max-width: 650px){
+
+    /* #main_path1{
+        height: 100%;
+    } */
+
     nav #main_inside{
         display: none;
     }
 
     nav{
         margin-top: 4%;
+    }
+
+    footer{
+        width: 100vh;
+        height: 100vh;
     }
 
     footer #b_g{
@@ -1289,7 +1299,10 @@ footer #b_g #abt #main p{
     footer #b_g #abt{
 
         /* height: 50%; */
-        width: 80%;
+        width: 90%;
+    }
+    #main_path5{
+        width: 100vh;
     }
 
     #main_path3{
@@ -1302,8 +1315,8 @@ footer #b_g #abt #main p{
     }
 
     #main_path3 #main_inside div img{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     
@@ -1324,11 +1337,62 @@ footer #b_g #abt #main p{
 
     #main_path1 #inside #abt{
         font-size: 1.6em;
-        margin-left: 30%;
+        /* margin-left: 30%; */
+    }
+
+    #main_path1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+    }
+
+    #main_path1 #inside{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 90%;
     }
 
     #main_path2 #main_inside_div #inside_adt{
         width: 80%;
     }
+/* 
+    #cicle{
+        width: 500px;
+        height: 500px;
+        display: none;
+    }
 
+    #cicle2{
+        width: 500px;
+        height: 500px;
+        display: none;
+    } */
+
+    section{
+        width: 100vh;
+    }
+
+    #cicle4{
+        width: 700px;
+        height: 700px;
+    }
+
+    #cicle5{
+        display: none;
+    }
+
+    #tit2{
+        width: 100vh;
+    }
+
+    #tit3{
+        width: 100vh;
+    }
+
+    #tit4{
+        width: 100vh;
+    }
 }
